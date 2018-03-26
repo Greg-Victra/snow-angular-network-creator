@@ -5,7 +5,7 @@
         <client_script/>
         <description>Index page of the angular2 SAP.</description>
         <direct>true</direct>
-        <endpoint>x_170302_global_index.do</endpoint>
+        <endpoint>x_170302_global_Meraki Network Provision - Angular UI.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?> <!-- Ugh...jelly...some people love it....I do not --><j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"><div style="display:none"><g:evaluate object="true">var g_ck=gs.getSession().getSessionToken();</g:evaluate></div><html><head><meta charset="utf-8"/><title>ng-snow</title><!-- Init some variables 'n things. --><script>(function() { window['_g_ck']="$[g_ck]";})()</script><!-- bootstrap...why not use a CDN? Its so much easier--><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="c1f6630d4fc1530077af1b818110c7aa.cssdbx" rel="stylesheet" type="text/css"/><link rel="icon" type="image/x-icon" href="favicon.ico"/><link href="styles.9c0ad738f18adc3d19ed.bundle.css" rel="stylesheet"/></head><body><app-root>Loading...</app-root><script type="text/javascript" src="inline.9b26c57b33247598591e.bundle.js"></script><script type="text/javascript" src="polyfills.5bb631a4613ed4631890.bundle.js"></script><script type="text/javascript" src="main.bb755806250f151564d4.bundle.js"></script></body></html><!-- 
       ****************************************************************************
       * BUNDLED FILES
@@ -26,19 +26,19 @@
       ****************************************************************************
       <g:requires name="x_ngrove_livereload.ui_page_livereload.jsdbx?page=$[sys_id]" />
   --></j:jelly>]]></html>
-        <name>index</name>
+        <name>Meraki Network Provision - Angular UI</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-23 10:50:46</sys_created_on>
         <sys_id>8df6a3cd4fc1530077af1b818110c7ec</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>index</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Meraki Network Provision - Angular UI</sys_name>
         <sys_package display_value="meraki-api-test" source="x_170302_meraki_ap">a425a38d4fc1530077af1b818110c7a0</sys_package>
         <sys_policy/>
-        <sys_scope display_value="ngSnow-demo">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
         <sys_update_name>sys_ui_page_8df6a3cd4fc1530077af1b818110c7ec</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-26 12:44:36</sys_updated_on>
+        <sys_updated_on>2018-03-26 13:12:48</sys_updated_on>
     </sys_ui_page>
 </record_update>

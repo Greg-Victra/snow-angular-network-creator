@@ -20,9 +20,9 @@
         <sys_id>ceebf7414f45530077af1b818110c731</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>GET</sys_name>
-        <sys_package display_value="ngSnow-demo" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
+        <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
         <sys_policy/>
-        <sys_scope display_value="ngSnow-demo">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
         <sys_update_name>sys_rest_message_fn_ceebf7414f45530077af1b818110c731</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-03-23 12:28:21</sys_updated_on>

@@ -15,7 +15,7 @@
         <sys_name>x_170302_global.vendor</sys_name>
         <sys_package display_value="meraki-api-test" source="x_170302_meraki_ap">a425a38d4fc1530077af1b818110c7a0</sys_package>
         <sys_policy/>
-        <sys_scope display_value="ngSnow-demo">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
         <sys_update_name>sys_ui_script_99f623854f05530077af1b818110c7aa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-03-23 10:50:46</sys_updated_on>
