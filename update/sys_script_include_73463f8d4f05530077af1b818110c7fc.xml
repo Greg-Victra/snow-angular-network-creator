@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_170302_global.meraki-organizations</api_name>
+        <client_callable>false</client_callable>
+        <description>Gets Meraki organizations - using sandbox API key</description>
+        <name>meraki-organizations</name>
+        <script><![CDATA[(function sample_http_request() {
+    try {
+        var request = new sn_ws.RESTMessageV2();
+        request.setHttpMethod('get');
+        request.setEndpoint('https://api.meraki.com/api/v0/organizations');
+        request.setHeader('X-Cisco-Meraki-API-Key','2f301bccd61b6c642d250cd3f76e5eb66ebd170f');
+        
+
+
+        var response = request.execute();
+        var httpResponseStatus = response.getStatusCode();
+        var httpResponseContentType = response.getHeader('Content-Type');
+        var parser = new global.JSONParser();
+        var parsed = {};
+        var httpResponseBody;
+
+
+        gs.debug("http response status_code: " + httpResponseStatus);
+        gs.debug("http response content-type: " + httpResponseContentType);
+
+
+        //  if request is successful then parse the response body
+        if (httpResponseStatus == 200 && httpResponseContentType == 'application/json') {
+            httpResponseBody = response.getBody();
+
+            //  parse JSON string returned from request into a json object
+            parsed = parser.parse(httpResponseBody);
+
+            // iterate over JSON object only printing the id property of JSON objects in results array
+            for (var i = 0; i < parsed.results.length; i++) {
+                gs.print('id: ' + parsed.results[i].id)
+            }
+            return parsed;
+        }
+    }
+    catch (ex) {
+        var message = ex.getMessage();
+        gs.debug(message);
+    }
+})();]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-23 12:00:41</sys_created_on>
+        <sys_id>73463f8d4f05530077af1b818110c7fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>meraki-organizations</sys_name>
+        <sys_package display_value="ngSnow-demo" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ngSnow-demo">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_update_name>sys_script_include_73463f8d4f05530077af1b818110c7fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-23 12:00:41</sys_updated_on>
+    </sys_script_include>
+</record_update>

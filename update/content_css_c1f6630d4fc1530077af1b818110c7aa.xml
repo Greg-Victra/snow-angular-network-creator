@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_css">
+    <content_css action="INSERT_OR_UPDATE">
+        <name>styles</name>
+        <style>/* You can add global styles to this file, and also import other style files */</style>
+        <sys_class_name>content_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-23 10:50:46</sys_created_on>
+        <sys_id>c1f6630d4fc1530077af1b818110c7aa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>styles</sys_name>
+        <sys_package display_value="meraki-api-test" source="x_170302_meraki_ap">a425a38d4fc1530077af1b818110c7a0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ngSnow-demo">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_update_name>content_css_c1f6630d4fc1530077af1b818110c7aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-23 11:01:01</sys_updated_on>
+        <type>local</type>
+        <url/>
+    </content_css>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>  </content>
+        <function_name>POST</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Networks [ POST ]</qualified_name>
+        <rest_endpoint>https://n149.meraki.com/api/v0/organizations/549236/networks</rest_endpoint>
+        <rest_message display_value="Networks">46ebf7414f45530077af1b818110c731</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-23 14:05:00</sys_created_on>
+        <sys_id>bf139c9d4f45530077af1b818110c75d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>POST</sys_name>
+        <sys_package display_value="ngSnow-demo" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ngSnow-demo">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_update_name>sys_rest_message_fn_bf139c9d4f45530077af1b818110c75d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-23 15:31:32</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>
