@@ -25,6 +25,7 @@ gr = new GlideRecord('u_meraki_cloud');
 		if(gr.next()){
 			gr.mac_address = current.variables.mac;
 			gr.serial_number = current.variables.serial;
+			gr.model_id = current.variables.model;
 			gr.update();
 		} else {
 		gr.initialize();	
@@ -64,14 +65,14 @@ gr = new GlideRecord('u_meraki_cloud');
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-26 15:33:03</sys_created_on>
         <sys_id>89234c1e4f85d30077af1b818110c7d5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>new_network</sys_name>
         <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
         <sys_update_name>sys_ws_operation_89234c1e4f85d30077af1b818110c7d5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-27 04:41:27</sys_updated_on>
+        <sys_updated_on>2018-03-27 05:29:58</sys_updated_on>
         <web_service_definition display_value="table ">48e2801e4f85d30077af1b818110c76c</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

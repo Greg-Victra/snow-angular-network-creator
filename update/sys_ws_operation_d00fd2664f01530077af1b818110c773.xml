@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Claim Order</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    try {
+        var apiKey = "2f301bccd61b6c642d250cd3f76e5eb66ebd170f"; // Sandbox, hard coded for dev
+        var baseUrl = "https://n149.meraki.com/api/v0"; // Hard coded shard number
+        var path = request.pathParams;
+        // https://{{shard}}.meraki.com/api/v0/organizations/{{organizationId}}/claim
+        var url = baseUrl + "/organizations/" + path.organizationId + '/claim';
+        
+
+        // API call options
+        var req = new sn_ws.RESTMessageV2();
+        req.setHttpMethod("post");  
+        req.setRequestHeader("X-Cisco-Meraki-API-Key", apiKey);
+        req.setRequestHeader("Content-Type", "application/json");
+        req.setEndpoint(url); 
+
+        // Copy user request body to Meraki API
+        var requestBody = request.body;
+        var requestString = requestBody.dataString;
+        var requestParsed = {};
+        requestParsed = JSON.parse(requestString);
+        req.setRequestBody(requestString);    
+
+        // Call API
+        var res = req.execute();
+
+        // Response data
+        var httpStatus = res.getStatusCode(); // FYI
+        var httpResponseContentType = res.getHeader('Content-Type');
+        var resBody = res.getBody();
+
+        // Check if body is JSON or a string
+        var resBodyFinal;
+        try { 
+            var parsedBody = JSON.parse(resBody);
+            resBodyFinal = parsedBody;
+        } catch (ex) { 
+            resBodyFinal = resBody;
+        }
+
+        return resBodyFinal;
+
+    }
+    catch (ex) {
+        // handle error
+        return ex;
+    }
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_170302_global/meraki_proxy/organizations/{organizationId}/claim</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/organizations/{organizationId}/claim</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-27 21:27:50</sys_created_on>
+        <sys_id>d00fd2664f01530077af1b818110c773</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Claim Order</sys_name>
+        <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_update_name>sys_ws_operation_d00fd2664f01530077af1b818110c773</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-27 21:27:50</sys_updated_on>
+        <web_service_definition display_value="meraki-proxy">e0eb5d7d4f09930077af1b818110c702</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
