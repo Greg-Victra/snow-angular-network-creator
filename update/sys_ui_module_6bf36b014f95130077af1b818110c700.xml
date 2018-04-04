@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Meraki Network Provisioning">ba93e7414f95130077af1b818110c778</application>
+        <filter/>
+        <name>Meraki Network Provisioning-Angular</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>Meraki_Admin,admin</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-04 20:54:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6bf36b014f95130077af1b818110c700</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meraki Network Provisioning-Angular</sys_name>
+        <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_update_name>sys_ui_module_6bf36b014f95130077af1b818110c700</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-04 20:54:26</sys_updated_on>
+        <table>x_170302_inventory_inventory_meraki</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

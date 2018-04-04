@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description>Requires Change Management Approval **PRIOR** to committing these changes.</description>
+        <device_type>browser</device_type>
+        <hint>Provisions Meraki Networks and Updates the CMDB</hint>
+        <name/>
+        <order>100</order>
+        <roles>dependency_views,itil,admin,Meraki_Admin,cmdb_query_builder,sn_bm_client.benchmark_data_viewer,u_meraki_cloud_user,view_changer,template_editor,certification</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-04 19:28:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d4e0b414f55130077af1b818110c783</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meraki Network Provisioning</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_update_name>sys_app_application_2d4e0b414f55130077af1b818110c783</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-04 19:28:55</sys_updated_on>
+        <title>Meraki Network Provisioning</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>
