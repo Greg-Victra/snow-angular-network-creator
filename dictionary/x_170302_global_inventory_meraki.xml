@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Inventory Meraki" max_length="40" name="x_170302_global_inventory_meraki" type="collection">
+        <element label="ID" max_length="100" name="id" type="string"/>
+        <element label="Mac" max_length="100" name="mac" type="string"/>
+        <element label="model" max_length="10" name="model" type="string"/>
+        <element label="Network Name" max_length="100" name="network_name" type="string"/>
+        <element label="Order Number" max_length="100" name="order_number" type="string"/>
+        <element label="Serial" max_length="14" name="serial" type="string"/>
+    </element>
+</database>

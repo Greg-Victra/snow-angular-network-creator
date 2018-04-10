@@ -5,12 +5,13 @@
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
         <default_operation_uri/>
-        <enforce_acl/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>POST</http_method>
-        <name>new_network - DO NOT USE</name>
+        <name>addDevices</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
     try {
-
+        var path = request.pathParams;
+        var netId = path.netId;
         // Copy user request body
         var requestBody = request.body;
         var requestString = requestBody.dataString;
@@ -19,30 +20,13 @@
    
 
         // Glide Table Logic
-gr = new GlideRecord('u_meraki_cloud');
-	gr.addQuery("correlation_id",current.variables.id);
-	gr.query();
-		if(gr.next()){
-			gr.mac_address = current.variables.mac;
-			gr.serial_number = current.variables.serial;
-			gr.model_id = current.variables.model;
-			gr.update();
-		} else {
-		gr.initialize();	
-			gr.mac_address = current.variables.mac;
-			gr.serial_number = current.variables.serial;
-			gr.correlation_id = current.variables.id;
-			gr.model_id = current.variables.model;
-			gr.insert();
-			
-		}
-	
-
+    
 
         // send data back to client
         return {
             message: "Table Updated",
-            userData: requestParsed
+            networkId: netId,
+            devices: requestParsed
         }; 
 
     
@@ -53,27 +37,27 @@ gr = new GlideRecord('u_meraki_cloud');
         return ex;
     }
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_170302_global/table/new_network</operation_uri>
+        <operation_uri>/api/x_170302_global/glide_table/networks/{netId}/devices/claim</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
-        <relative_path>/new_network</relative_path>
+        <relative_path>/networks/{netId}/devices/claim</relative_path>
         <request_example/>
-        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-26 15:33:03</sys_created_on>
-        <sys_id>89234c1e4f85d30077af1b818110c7d5</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>new_network - DO NOT USE</sys_name>
+        <sys_created_on>2018-04-04 21:45:03</sys_created_on>
+        <sys_id>54af670d4f95130077af1b818110c717</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>addDevices</sys_name>
         <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
-        <sys_update_name>sys_ws_operation_89234c1e4f85d30077af1b818110c7d5</sys_update_name>
+        <sys_update_name>sys_ws_operation_54af670d4f95130077af1b818110c717</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-05 08:47:53</sys_updated_on>
-        <web_service_definition display_value="table ">48e2801e4f85d30077af1b818110c76c</web_service_definition>
+        <sys_updated_on>2018-04-04 21:59:09</sys_updated_on>
+        <web_service_definition display_value="glide-table">e2f96b854f95130077af1b818110c75f</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
 </record_update>
