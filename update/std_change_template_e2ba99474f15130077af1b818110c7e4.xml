@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="std_change_template">
+    <std_change_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <global>true</global>
+        <group/>
+        <link_element/>
+        <name>Meraki New Network Provisioning</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description>Meraki New Network Provisioning</short_description>
+        <show_on_template_bar>false</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>std_change_template</sys_class_name>
+        <sys_created_by>Change.Manager</sys_created_by>
+        <sys_created_on>2018-04-10 16:01:39</sys_created_on>
+        <sys_id>e2ba99474f15130077af1b818110c7e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meraki New Network Provisioning</sys_name>
+        <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
+        <sys_update_name>std_change_template_e2ba99474f15130077af1b818110c7e4</sys_update_name>
+        <sys_updated_by>Change.Manager</sys_updated_by>
+        <sys_updated_on>2018-04-10 16:01:39</sys_updated_on>
+        <table>change_request</table>
+        <template>short_description=New Meraki Network Provisioning for Site #^description=New site creation per PM request #^implementation_plan=Use the network provisioning interface to provision new site prior to installation:&#13;
+https://dev12118.service-now.com/x_170302_global_index.do#/&#13;
+&#13;
+Must have the following variables: template name, network name, network tag, and site address.  All gear is to be provisioned PRIOR to connecting to the network.  Change window is from 5 pm-7 pm in the time zone of the network being created.^backout_plan=1. Log into Meraki Dashboard (dashboard.meraki.com)&#13;
+2. Go to Organization&gt;Monitor&gt;Overview&#13;
+3. Select newly created network and click delete.&#13;
+4. Confirm the selected network by checking the box next to: "I acknowledge that deleting these networks is irreversible and wish to continue".&#13;
+5. Click delete network^test_plan=Previous networks created and bound to the same template with no issues.  Also network will  be provisioned prior to connecting hardware to the network.^assignment_group=287ebd7da9fe198100f92cc8d1d2154e^justification=Request per PM project #^risk_impact_analysis=None.  Network creation is bound to a pre-defined template with changes to the network.^EQ</template>
+        <user display_value="Change Manager">f8588956937002002dcef157b67ffb98</user>
+        <view/>
+    </std_change_template>
+</record_update>
