@@ -9,16 +9,16 @@
         <script_name>vendor</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-23 10:50:46</sys_created_on>
-        <sys_id>99f623854f05530077af1b818110c7aa</sys_id>
+        <sys_created_on>2018-04-11 13:12:45</sys_created_on>
+        <sys_id>5aad751f4fdd130077af1b818110c70f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_170302_global.vendor</sys_name>
         <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
-        <sys_update_name>sys_ui_script_99f623854f05530077af1b818110c7aa</sys_update_name>
+        <sys_update_name>sys_ui_script_5aad751f4fdd130077af1b818110c70f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-23 10:50:46</sys_updated_on>
+        <sys_updated_on>2018-04-11 13:12:45</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

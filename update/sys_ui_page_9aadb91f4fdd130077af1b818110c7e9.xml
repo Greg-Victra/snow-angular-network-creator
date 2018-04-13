@@ -6,11 +6,11 @@
         <description>Index page of the angular2 SAP.</description>
         <direct>true</direct>
         <endpoint>x_170302_global_index.do</endpoint>
-        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?> <!-- Ugh...jelly...some people love it....I do not --><j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"><div style="display:none"><g:evaluate object="true">var g_ck=gs.getSession().getSessionToken();</g:evaluate></div><html><head><meta charset="utf-8"/><title>ng-snow</title><!-- Init some variables 'n things. --><script>(function() { window['_g_ck']="$[g_ck]";})()</script><!-- bootstrap...why not use a CDN? Its so much easier--><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="c1f6630d4fc1530077af1b818110c7aa.cssdbx" rel="stylesheet" type="text/css"/><link rel="icon" type="image/x-icon" href="favicon.ico"/><!-- Material Design Bootstrap --><!-- 
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?> <!-- Ugh...jelly...some people love it....I do not --><j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"><div style="display:none"><g:evaluate object="true">var g_ck=gs.getSession().getSessionToken();</g:evaluate></div><html><head><meta charset="utf-8"/><title>ng-snow</title><!-- Init some variables 'n things. --><script>(function() { window['_g_ck']="$[g_ck]";})()</script><!-- bootstrap...why not use a CDN? Its so much easier--><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="9eadb91f4fdd130077af1b818110c7ec.cssdbx" rel="stylesheet" type="text/css"/><link rel="icon" type="image/x-icon" href="favicon.ico"/><!-- Material Design Bootstrap --><!-- 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    --><link href="styles.f4645fee0a5015ffbdec.bundle.css" rel="stylesheet"/></head><body><app-root>Loading...</app-root><script type="text/javascript" src="inline.67d4e931a4ec8c6da837.bundle.js"></script><script type="text/javascript" src="polyfills.5bb631a4613ed4631890.bundle.js"></script><script type="text/javascript" src="main.2d57691033d13898d2d8.bundle.js"></script></body></html><!-- 
+    --><link href="styles.b0cdc66c065a252d3d8f.bundle.css" rel="stylesheet"/></head><body><app-root>Loading...</app-root><script type="text/javascript" src="inline.02689013da19b3681bb4.bundle.js"></script><script type="text/javascript" src="polyfills.5bb631a4613ed4631890.bundle.js"></script><script type="text/javascript" src="main.2d7d63936f555652fc4d.bundle.js"></script></body></html><!-- 
       ****************************************************************************
       * BUNDLED FILES
       ****************************************************************************
@@ -34,15 +34,15 @@
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-23 10:50:46</sys_created_on>
-        <sys_id>8df6a3cd4fc1530077af1b818110c7ec</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_created_on>2018-04-11 13:12:45</sys_created_on>
+        <sys_id>9aadb91f4fdd130077af1b818110c7e9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>index</sys_name>
         <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
-        <sys_update_name>sys_ui_page_8df6a3cd4fc1530077af1b818110c7ec</sys_update_name>
+        <sys_update_name>sys_ui_page_9aadb91f4fdd130077af1b818110c7e9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-11 11:18:00</sys_updated_on>
+        <sys_updated_on>2018-04-13 08:53:39</sys_updated_on>
     </sys_ui_page>
 </record_update>
