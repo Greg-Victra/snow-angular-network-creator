@@ -5,12 +5,12 @@
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
         <default_operation_uri/>
-        <enforce_acl/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>GET</http_method>
-        <name>Organizations</name>
+        <name>OrganizationsTest</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
     try {
-        var apiKey = ''; // = "2f301bccd61b6c642d250cd3f76e5eb66ebd170f"; // Sandbox, hard coded for dev
+		var apiKey = ''; // = "2f301bccd61b6c642d250cd3f76e5eb66ebd170f"; // Sandbox, hard coded for dev
 		
 		// Get configs via system property
 		//apiKey = gs.getProperty('x_170302_global.merakiApiKey');
@@ -20,9 +20,10 @@
 		gr.addQuery('name','default');
 		gr.query();
 		while (gr.next()){
-		  apiKey = gr.api_key.toString();
+		  apiKey = gr.api_key.toString()
 		}
 		
+     
         var baseUrl = "https://api.meraki.com/api/v0";
         var path = request.pathParams;
         var url = baseUrl + "/organizations/";
@@ -41,32 +42,34 @@
         // return API call results
         var parsed = JSON.parse(resBody)
         return parsed; 
+		
     }
     catch (ex) {
         // handle error
         return ex;
     }
+	
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_170302_global/meraki_proxy/organizations</operation_uri>
+        <operation_uri>/api/x_170302_global/meraki_proxy/organizationsTest</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
-        <relative_path>/organizations</relative_path>
+        <relative_path>/organizationsTest</relative_path>
         <request_example/>
-        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-26 14:40:55</sys_created_on>
-        <sys_id>63c73b464f85d30077af1b818110c7cb</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Organizations</sys_name>
+        <sys_created_on>2018-04-13 09:27:39</sys_created_on>
+        <sys_id>105d5ff34f1d130077af1b818110c7bb</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>OrganizationsTest</sys_name>
         <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
-        <sys_update_name>sys_ws_operation_63c73b464f85d30077af1b818110c7cb</sys_update_name>
+        <sys_update_name>sys_ws_operation_105d5ff34f1d130077af1b818110c7bb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-13 11:49:00</sys_updated_on>
+        <sys_updated_on>2018-04-13 11:56:55</sys_updated_on>
         <web_service_definition display_value="meraki-proxy">e0eb5d7d4f09930077af1b818110c702</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
