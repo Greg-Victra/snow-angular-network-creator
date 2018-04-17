@@ -2,6 +2,7 @@
 <database>
     <element label="meraki_configs" max_length="40" name="x_170302_global_meraki_configs" type="collection">
         <element label="Api key" max_length="40" name="api_key" type="string"/>
+        <element default="https://api.meraki.com/api/v0" label="Base URL" max_length="64" name="base_url" type="string"/>
         <element label="Name" max_length="40" name="name" type="string"/>
     </element>
 </database>

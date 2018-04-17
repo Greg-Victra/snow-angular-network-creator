@@ -8,5 +8,6 @@
         <element label="Network Name" max_length="100" name="network_name" type="string"/>
         <element label="Order Number" max_length="100" name="order_number" type="string"/>
         <element label="Serial" max_length="14" name="serial" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
     </element>
 </database>
