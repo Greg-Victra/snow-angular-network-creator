@@ -7,7 +7,7 @@
         <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>POST</http_method>
-        <name>addDevices</name>
+        <name>newDevice</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
     try {
         var path = request.pathParams;
@@ -17,38 +17,36 @@
         var requestString = requestBody.dataString;
         var requestParsed = {};
         requestParsed = JSON.parse(requestString);
-   
+
 
         // Glide Table Logic
-    var gr = new GlideRecord('x_170302_global_u_cmdb_ci_cisco_meraki');
-//query on a unique field in the ci_cmdb and set parameters
-        gr.addQuery('correlation_id','SAMEAS','correlation_id');
+        var gr = new GlideRecord('x_170302_global_u_cmdb_ci_cisco_meraki');
+        //query on a unique field in the ci_cmdb and set parameters
+        gr.addQuery('requestParsed.networkId', 'SAMEAS', 'correlation_id');
 
         gr.query();
 
-if(gr.next()){
-gr.serial_number=requestParsed.serial;
-gr.name=requestParsed.name;
-gr.mac_address=requestParsed.mac;
-gr.model_id=requestParsed.model;
-gr.update();
-} else {
-        gr.initialize();
-gr.mac_address=requestParsed.mac;
-        gr.serial_number=requestParsed.serial;
-gr.name=requestParsed.name;
-gr.correlation_id=requestParsed.networkId;
-gr.model_id=requestParsed.model;
-        gr.insert();
-}
+        if (gr.next()) {
+            gr.correlation_id = requestParsed.networkId;
+            gr.mac_address = requestParsed.mac;
+            gr.serial_number = requestParsed.serial;
+            gr.update();
+        } else {
+            gr.initialize();
+            gr.mac_address = requestParsed.mac;
+            gr.serial_number = requestParsed.serial;
+            gr.correlation_id = requestParsed.networkId;
+            gr.model_number = requestParsed.model;
+            gr.insert();
+        }
         // send data back to client
         return {
             message: "Table Updated",
             networkId: netId,
             devices: requestParsed
-        }; 
+        };
 
-    
+
 
     }
     catch (ex) {
@@ -68,14 +66,14 @@ gr.model_id=requestParsed.model;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-04 21:45:03</sys_created_on>
         <sys_id>54af670d4f95130077af1b818110c717</sys_id>
-        <sys_mod_count>29</sys_mod_count>
-        <sys_name>addDevices</sys_name>
+        <sys_mod_count>72</sys_mod_count>
+        <sys_name>newDevice</sys_name>
         <sys_package display_value="Meraki Network Provision - Angular" source="x_170302_global">b0f6630d4fc1530077af1b818110c7dd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meraki Network Provision - Angular">b0f6630d4fc1530077af1b818110c7dd</sys_scope>
         <sys_update_name>sys_ws_operation_54af670d4f95130077af1b818110c717</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-24 21:18:30</sys_updated_on>
+        <sys_updated_on>2018-05-08 10:23:38</sys_updated_on>
         <web_service_definition display_value="glide-table">e2f96b854f95130077af1b818110c75f</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
